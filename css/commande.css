@@ -36,6 +36,7 @@ main div.produit span{
 main div.produit a {
     align-self: flex-end;
     margin-left: auto;
+    font-size: 110%;
 }
 
 main div.container img {
