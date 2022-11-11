@@ -90,9 +90,12 @@ header a, input[type=search] {
     font-family: Poppins, sans-serif;
 }
 
+body > header > nav > div.user > ul > li:nth-child(1) {
+  color: black;
+}
+
 div.user li i {
   margin-right: 5px;
-  color: black;
 }
 
 header a.active {
