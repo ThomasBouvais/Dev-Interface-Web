@@ -197,6 +197,13 @@ input[type=search] {
    aside button{
     margin-bottom: 2em;
    }
+   aside{
+    width: 70%;
+   }
+
+   main{
+    width: 70%;
+   }
    
 }
 
