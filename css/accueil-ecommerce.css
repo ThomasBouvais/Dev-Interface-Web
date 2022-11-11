@@ -17,6 +17,10 @@ div.title {
     margin: 0%;
 }
 
+img {
+  margin-right: 56px;
+}
+
 .image_singe {
     display: flex;
     flex-direction: column;
