@@ -109,8 +109,8 @@ nav.mobile_nav {
 #menuToggle {
   display: flex;
   flex-direction: column;
-  padding-top: 10px;
-  padding-left: 10px;
+  padding-top: 25px;
+  padding-left: 15px;
   z-index: 1;
   -webkit-user-select: none;
   user-select: none;
