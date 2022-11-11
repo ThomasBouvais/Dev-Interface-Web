@@ -1,8 +1,17 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+/* page */
+div.commande {
     font-family: Poppins, sans-serif;
     display: flex;
     justify-content: space-evenly;
-    background-color: aliceblue;
+    background-color: white;
+}
+body {
+    font-family: Poppins, sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 main {
@@ -56,6 +65,7 @@ hr {
     
     width: 100%;
     border: 0.5px solid;
+    margin-bottom: 5%;
     
 }
 
@@ -101,3 +111,338 @@ aside button {
     width: 97%;
     background-color: transparent;
 }
+
+
+header a, input[type=search] {
+    color: #EFF2F6;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: thin;
+    font-family: Poppins, sans-serif;
+}
+
+div.user li i {
+  margin-right: 5px;
+}
+
+header a.active {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+header {
+    background-color: #0D0D0D;
+    color: #EFF2F6;
+    height: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 100px;
+    padding-right: 100px;
+    border-bottom: 1px solid #EFF2F6;
+}
+
+header > nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .nav_left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul {
+    margin-top: 0;
+    margin-bottom: 0;
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    padding-left: 0;
+}
+
+header ul li {
+    margin-right: 1.5rem;
+}
+
+li i {
+    display: inline;
+    padding: 0;
+}
+
+header div.user ul {
+    justify-self: end;
+}
+
+input[type=search] {
+    background-color: #0D0D0D;
+    border: none;
+
+}
+
+/* responsive page */
+
+@media only screen 
+   and (max-width : 768px) {
+   div.commande {
+    flex-direction: column;
+    align-items: center ;
+   }
+   div.produit a{
+
+    align-self: flex-end;
+    font-size: 80%;
+   }
+   aside button{
+    margin-bottom: 2em;
+   }
+   
+}
+
+/* Mise en page de la navbar mobile */
+
+body {
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: #1E1E23;
+  opacity:1;
+  font-size: 1.5em;
+  font-weight: 400;
+  transition: 200ms;
+}
+a:hover {
+  opacity:0.5;
+}
+ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+/* mise en page navbar*/
+
+
+nav.mobile_nav {
+  background-color: #1E1E23;
+  height: 65px;
+}
+
+
+#menuToggle {
+  display: flex;
+  flex-direction: column;
+  padding-top: 25px;
+  padding-left: 15px;
+  z-index: 1;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle input
+{
+  display: flex;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  cursor: pointer;
+  opacity: 0;
+  z-index: 2;
+}
+
+#menuToggle span
+{
+  display: flex;
+  width: 29px;
+  height: 2px;
+  margin-bottom: 5px;
+  position: relative;
+  background: #ffffff;
+  border-radius: 3px;
+  z-index: 1;
+  transform-origin: 5px 0px;
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#menuToggle span:first-child
+{
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+}
+
+#menuToggle input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-10px, -4px);
+  background: #36383F;
+}
+#menuToggle input:checked ~ span:nth-child(1), #menuToggle input:checked ~ span:nth-child(2)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+#menuToggle input:checked ~ span:nth-child(4)
+{
+  transform: rotate(-45deg) translate(0, -5px);
+}
+
+#menuToggle input:checked ~ span.fourth {
+  display: none;
+}
+
+
+#menu
+{
+  position: absolute;
+  width: 180px;
+  height: 400px;
+  box-shadow: 0 0 10px #85888C;
+  margin: -50px 0 0 -50px;
+  padding: 50px;
+  padding-top: 125px;
+  background-color: #F5F6FA;
+  -webkit-font-smoothing: antialiased;
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#menu li
+{
+  padding: 10px 0;
+  transition-delay: 2s;
+  font-family: Poppins, sans-serif;
+}
+
+#menuToggle input:checked ~ ul
+{
+  transform: none;
+}/* Gestion des navbar */
+
+@media only screen 
+   and (min-width : 1000px) {
+   nav.mobile_nav {
+    display: none;
+   }
+   div.sort_by.mobile {
+    display: none;
+  }
+
+  span.clear.mobile {
+    display: none;
+  }
+
+  p.show_right {
+    display: none;
+  }
+}
+
+@media only screen 
+   and (max-width : 1000px) {
+   header.desktop_nav {
+    display: none;
+   }
+}
+
+
+/* Mise en page du pied de page */
+
+footer {
+    display: flex;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  
+  footer ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  footer .column_newsletter {
+    width: 30%;
+  }
+  
+  footer > div {
+    width: auto;
+    width: 20%;
+  }
+  
+  footer .column_newsletter h4 {
+    font-size: 32px;
+    font-weight: 500;
+    margin-bottom: 5px;
+    margin-top: 5px;
+  }
+  
+  footer .column_newsletter input {
+    border: 1px solid gray;
+    font-family: Poppins, sans-serif;
+    border-right: none;
+    width: 200px;
+    padding-left: 1rem;
+  }
+  
+  footer .column_newsletter button {
+    border: 1px solid gray;
+    background-color: #fff;
+    font-family: Poppins, sans-serif;
+    border-left: none;
+    height: 50px;
+    width: 150px;
+    font-weight: 500;
+    font-size: 17px;
+  }
+  
+  footer .column_newsletter .sign_up {
+    display: flex;
+    width: 100%;
+  }
+  
+  footer .column_shop > ul > li, footer .column_help > ul > li, footer .column_about > ul > li {
+    color: gray;
+  }
+  
+  footer .column_shop > h5, footer .column_help > h5, footer .column_about > h5 {
+    margin-top: 5px;
+    font-size: 16px;
+  }
+  
+  @media only screen 
+     and (max-width : 1000px) { 
+  .column_newsletter {
+    min-width: 100%;
+    margin-bottom: 2em;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .column_newsletter .sign_up{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  input#email {
+    height: 93%;
+  }
+  
+  footer {
+    flex-wrap: wrap;
+    margin-left: 20px;
+    margin-right: 20px;
+  } 
+  }
