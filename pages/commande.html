@@ -4,10 +4,49 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/shop_page.css">
-    <title>Cart</title>
+    <title>Monkey Market</title>
+    <link rel="stylesheet" href="projet.css">
 </head>
 <body>
+
+  <!--nav bar-->
+  <header class="desktop_nav">
+    <nav>
+      <div class="nav_left">
+        <ul>
+          <li><a class="active" href="">Monkey Market</a></li>
+          <li><a href="">Magasin</a></li>
+          <li><a href="">Histoire</a></li>
+          <li><a href="">A propos</a></li>
+        </ul>
+        <input type="search" id="site-search" name="q" placeholder="Search">
+      </div>
+      <div class="user">
+        <ul>
+          <li><i class="fa fa-shopping-basket"></i>3</li>
+          <li><a href="">Connexion</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <nav role="navigation" class="mobile_nav">
+    <div id="menuToggle">
+      <input type="checkbox" />
+      <span></span>
+      <span></span>
+      <span></span>
+      <span class="fourth"></span>
+    <ul id="menu">
+      <li><a href="#">Monkey Market</a></li>
+      <li><a href="#">Magasin</a></li>
+      <li><a href="#">Histoire</a></li>
+      <li><a href="#">A propos</a></li>
+    </ul>
+    </div>
+  </nav>
+
+<div class="commande">
     <main>
         <h2>Votre panier</h2>
 
@@ -15,7 +54,7 @@
 
         <p>Vous n'êtes pas prêt à passer à la caisse ? Continuer vos achats</p>
         <div class="produit">
-            <img src="../images/shop_page/monkey_01.jpg" alt="">
+            <img src="images/singe_1.jpg" alt="">
             <div class="text">
                 <h4>Chimpanzé</h4>
                 <span>Taille : 66cm</span>
@@ -28,7 +67,7 @@
         <hr>
 
         <div class="produit">
-            <img src="../images/shop_page/monkey_02.jpg" alt="">
+            <img src="images/singe_2.jpg" alt="">
             <div class="text">
                 <h4>Nasique</h4>
                 <span class="oui">Taille : 60cm</span>
@@ -85,6 +124,53 @@
         </div>
 
         <button>Continuer à payer</button>
+
     </aside>
+</div>
+<footer>
+  <div class="column_newsletter">
+      <h4>Inscrivez-vous à notre newsletter</h4>
+      <p>Pour être tenu informé de toutes les nouvelles actualités de Monkey Market.</p>
+      <div class="sign_up">
+
+      <input type="email" id="email" name="email" placeholder="Email address">
+      <button>Inscription</button>
+
+      </div>
+  </div>
+  <div class="column_shop">
+      <h5>Magasin</h5>
+      <ul>
+        <li>Femmes</li>
+        <li>Hommes</li>
+        <li>Enfants</li>
+        <li>Habits</li>
+        <li>Equipements</li>
+        <li>Chaussures</li>
+        <li>Slips</li>
+        <li>Vente</li>
+    </ul>
+</div>
+<div class="column_help">
+    <h5>Aide</h5>
+    <ul>
+        <li>Centre d'aide</li>
+        <li>Statut de la commande</li>
+        <li>Taille</li>
+        <li>Retours et Garantie</li>
+        <li>Contactez-nous</li>
+    </ul>
+</div>
+<div class="column_about">
+    <h5>About</h5>
+    <ul>
+        <li>A propos</li>
+        <li>Responsibilité</li>
+        <li>Technologie & Innovation</li>
+        <li>Découvrez notre histoire</li>
+      </ul>
+  </div>
+</footer>
+
 </body>
 </html>
