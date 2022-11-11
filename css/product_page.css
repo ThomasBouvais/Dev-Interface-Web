@@ -478,21 +478,6 @@ nav.mobile_nav {
         display: none;
     }
 
-    header.mobile_nav {
-        display: contents;
-    }
-
-    header #nav {
-        width: auto;
-        height: 60px;
-        display: flex;
-        background-color: #000000;
-    }
-
-    header #nav h1 {
-        font-weight: semi-bold;
-    }
-
     section {
         width: 100%;
         display: flex;
