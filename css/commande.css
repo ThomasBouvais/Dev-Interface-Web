@@ -1,0 +1,103 @@
+body {
+    font-family: Poppins, sans-serif;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: aliceblue;
+}
+
+main {
+    width: 50%;
+}
+
+aside {
+    width: 30%;
+    margin-top: 3%;
+    margin-right: 5%;
+}
+
+main div.produit {
+    display: flex;
+    
+}
+
+main div.produit span{
+    margin-bottom : 17%;
+}
+
+main div.produit a {
+    align-self: flex-end;
+    margin-left: auto;
+}
+
+main div.container img {
+    width: 150px;
+    height: 150px;
+    margin-right: 1em;
+}
+
+main div.text {
+    display: flex;
+    flex-direction: column;
+}
+
+div.order {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10% ;
+}
+
+div.order div.information {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+hr {
+    
+    width: 100%;
+    border: 0.5px solid;
+    
+}
+
+
+.prix{
+    font-weight: bolder;
+}
+
+.gris{
+    color: gray;
+}
+
+div.order h5 {
+    margin: 0;
+}
+
+aside input {
+    width: 100%;
+    padding: 5px;
+    font-family:  sans-serif;
+}
+
+aside div.sub {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1em;
+    margin-top: 1em;
+    font-size: 12px;
+    font-family: sans-serif;
+}
+
+aside button {
+    width: 100%;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    margin-top: 1em;
+    font-family: sans-serif;
+    background-color: black;
+    color: white;
+}
+
+.search{
+    width: 97%;
+    background-color: transparent;
+}
