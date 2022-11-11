@@ -1,0 +1,235 @@
+html, body {
+    padding: 0;
+    margin: 0;
+   }
+   
+   header {
+    background-color:#000000;
+    color: #FFFFFF;
+   }
+
+@media only screen and (min-width : 1080px) {
+
+    header #mobileNav {
+        display: none;
+    }
+
+    main{
+        display: flex;
+        flex-direction: row;
+    }
+
+    header #nav {
+        width: auto;
+        height: 60px;
+        display: flex;
+        background-color: rgba(0, 0, 0);
+    }
+
+    header #nav h1 {
+        font-weight: semi-bold;
+    }
+
+    section {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-top: 148px;
+    }
+
+    section .carrousel {
+        margin-top: 148px;
+        margin-left: 111px;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      
+    section ul {
+        display: flex;
+        list-style: none;
+        max-width: 483px;
+        margin-block: 2rem;
+        margin-inline: auto;
+        overflow: auto;
+        scroll-snap-type: x mandatory;
+    }
+      
+    section li {
+        display: grid;
+        place-items: center;
+        width: 100%;
+        flex-shrink: 0;
+        scroll-snap-align: start;
+    }
+
+    section img{
+        padding-top: 0%;
+        margin-right: 0px;
+        margin-left: 0px;
+        margin-top: 0px;
+    }
+
+    section .flèche {
+        /*position: absolute;
+        left: 22.11%;
+        right: 20.89%;
+        top: 393.36px;
+        bottom: -35.36%;*/
+        margin-top: 100px;
+    }
+
+    /*section .text {
+        width: 100%;
+        margin: auto;
+        padding-top: 50%;
+        order: 1;
+    }*/
+
+    section .nom_du_produit {
+        /*position: absolute;
+        left: 54.43%;
+        right: 8.5%;
+        top: 16.44%;
+        bottom: 78.22%;*/
+        font-family: 'Public sans';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 36px;
+        line-height: 48px;
+        letter-spacing: -0.03em;
+        color: #000000;
+        padding-top: 48px;
+    }
+
+    section .prix {
+        /*position: absolute;
+        left: 54.43%;
+        right: 8.5%;
+        top: 21.48%;
+        bottom: 74.22%;*/
+        font-family: 'Public sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height:36px;
+        letter-spacing: -0.03em;
+        color: #000000;
+    }
+
+    section .description {
+        /*position: absolute;
+        width: 357px;
+        height: 96px;
+        left: 762px;
+        top: 247px;*/
+        font-family: 'Public sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 17px;
+        line-height:24px;
+        letter-spacing: -0.03em;
+        color: #000000;
+        max-width: 357px;
+        margin-top: 15px;
+    }
+    
+    section #nbProduit {
+        border: 1px solid #000000;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 26px;
+        text-align: center;
+        letter-spacing: -0.3px;
+        color: #0D0D0D;
+        mix-blend-mode: normal;
+        width: 167px;
+        height: 50px;
+        margin-top: 15px;
+        
+    }
+
+    section #sizeSelect {
+        border: 1px solid #000000;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 26px;
+        text-align: center;
+        letter-spacing: -0.3px;
+        color: #0D0D0D;
+        background-color: #FFFFFF;
+        mix-blend-mode: normal;
+        width: 168px;
+        height: 53.5px;
+        margin-top: 15px;
+    }
+
+    section .taille {
+        /*position: absolute;
+        height: 20px;
+        left: 54.43%;
+        right: 20.57%;
+        top: calc(50% - 20px/2 - 16px);*/
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: -0.4px;
+        color: #000000;
+        mix-blend-mode: normal;
+        opacity: 0.5;
+        margin-top: 16px;
+
+    }
+
+    section #button_add {
+        font-family: 'Public sans';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 22px;
+        text-align: center;
+        letter-spacing: -0.4px;
+        color: #FFFFFF;
+        background-color: #0D0D0D;
+        border: none;
+        padding: 14px 34px;
+        margin-right: 13px;
+        margin-top: 23px;
+    }
+
+    section #button_buy {
+        font-family: 'Public sans';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 22px;
+        text-align: center;
+        letter-spacing: -0.4px;
+        color: #FFFFFF;
+        background-color: #2F80ED;
+        border: none;
+        padding: 14px 37px;
+        margin-top: 23px;
+    }
+}
+
+@media only screen and (max-width : 1080px) {
+    
+}
+
+
+
+
+
+
+
+
+
+
