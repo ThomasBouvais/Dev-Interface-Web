@@ -4,9 +4,223 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Shop Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="shop_page.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
+
+    <!-- Barre de navigation Desktop -->
+
+    <header class="desktop_nav">
+        <nav>
+            <div class="nav_left">
+                <ul>
+                    <li><a class="active" href="">Ecommerce</a></li>
+                    <li><a href="">Shop</a></li>
+                    <li><a href="">Stories</a></li>
+                    <li><a href="">About</a></li>
+                </ul>
+                <input type="search" id="site-search" name="q" placeholder="Search">
+            </div>
+            <div class="user">
+                <ul>
+                    <li><i class="fa fa-shopping-basket"></i>3</li>
+                    <li><a href="">Login</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Barre de navigation Mobile -->
+  
+          <nav role="navigation" class="mobile_nav">
+            <div id="menuToggle">
+              <input type="checkbox" />
+                <span></span>
+                <span></span>
+                <span></span>
+                <span class="fourth"></span>
+            <ul id="menu">
+              <li><a href="#">Ecommerce</a></li>
+              <li><a href="#">Shop</a></li>
+              <li><a href="#">Stories</a></li>
+              <li><a href="#">About</a></li>
+            </ul>
+           </div>
+          </nav>
+
+
+
+    <div class="banner">
+        <h2>Shop Men's</h2>
+        <p>Lorem ipsum dolor sit amet consectetur 
+            adipisicing elit. Iure obcaecati officiis 
+            autem, non fuga, debitis harum tempora odio 
+            explicabo, eveniet in? Voluptatem dignissimos,
+            iusto id et ipsum velit tempora officia.</p>
+    </div>
+    <div class="shop_page">
+        <aside>
+            <div class="title_aside">
+                <h5>Filters</h5>
+                <span class="clear desktop">Clear filters</span>
+                <div class="sort_by mobile">
+                    <label for="sort-select">Sort by </label>
     
+                    <select name="sort" id="sort-select">
+                        <option value="popular">Popular</option>
+                        <option value="price">Price</option>
+                        <option value="reviews">Reviews</option>
+                    </select>
+                </div>
+            </div>
+            <span class="clear mobile">Clear filters</span>
+
+            <p class="show_right">Showing 1003 Products</p>
+            <div class="products">
+            <div class="categories">
+                <h6>Categories</h6>
+
+                <div class="choice">
+                    <input type="checkbox" id="jackets" name="jackets" checked>
+                    <label for="jackets">Jackets</label>
+                </div>
+
+                <div class="choice">
+                    <input type="checkbox" id="fleece" name="fleece">
+                    <label for="fleece">Fleece</label>
+                </div>
+
+                <div class="choice">
+                    <input type="checkbox" id="sweatshirts_hoodies" name="sweatshirts_hoodies">
+                    <label for="sweatshirts_hoodies">Sweatshirts & Hoodies</label>
+                </div>
+
+                <div class="choice">
+                    <input type="checkbox" id="sweaters" name="sweaters">
+                    <label for="sweaters">Sweaters</label>
+                </div>
+
+                <div class="choice">
+                    <input type="checkbox" id="shirts" name="shirts">
+                    <label for="shirts">Shirts</label>
+                </div>
+
+                <div class="choice">
+                    <input type="checkbox" id="t_shirts" name="t_shirts">
+                    <label for="t_shirts">T-shirts</label>
+                </div>
+
+                <div class="choice">
+                    <input type="checkbox" id="pants_jeans" name="pants_jeans">
+                    <label for="pants_jeans">Pants & Jeans</label>
+                </div>
+            </div>
+            <div class="colors">
+                
+                <h6>Color</h6>
+                <div class="span_colors">
+                <span class="color">
+                </span>
+
+                <span class="color">
+                </span>
+
+                <span class="color">
+                </span>
+
+                <span class="color">
+                </span>
+
+                <span class="color">
+                </span>
+
+                <span class="color">
+                </span>
+
+                <span class="color">
+                </span>
+
+                <span class="color">
+                </span>
+
+                <span class="color">
+                </span>
+
+                <span class="color">
+                </span>
+            </div>
+            </div>
+        </aside>
+        <main>
+            <div class="sort_by desktop">
+                <label for="sort-select">Sort by </label>
+
+                <select name="sort" id="sort-select">
+                    <option value="popular">Popular</option>
+                    <option value="price">Price</option>
+                    <option value="reviews">Reviews</option>
+                </select>
+            </div>
+            <p class="show_desktop">Showing 1003 Products</p>
+            <div class="products">
+
+                <div class="card">
+                    <img src="images/monkey_01.jpg" alt="">
+                    <div class="first_line_card">
+                        <span class="title_card">Image Test</span><span class="taille">M</span>
+                    </div>
+                    <span class="price">100€</span>
+                </div>
+                
+                <div class="card">
+                    <img src="images/monkey_02.jpg" alt="">
+                    <div class="first_line_card">
+                        <span class="title_card">Image Test</span><span class="taille">M</span>
+                    </div>
+                    <span class="price">100€</span>
+                </div>
+                
+                <div class="card">
+                    <img src="images/monkey_03.jpg" alt="">
+                    <div class="first_line_card">
+                        <span class="title_card">Image Test</span><span class="taille">M</span>
+                    </div>
+                    <span class="price">100€</span>
+                </div>
+                
+                <div class="card">
+                    <img src="images/monkey_04.jpg" alt="">
+                    <div class="first_line_card">
+                        <span class="title_card">Image Test</span><span class="taille">M</span>
+                    </div>
+                    <span class="price">100€</span>
+                </div>
+                
+                <div class="card">
+                    <img src="images/monkey_05.jpg" alt="">
+                    <div class="first_line_card">
+                        <span class="title_card">Image Test</span><span class="taille">M</span>
+                    </div>
+                    <span class="price">100€</span>
+                </div>
+                
+                <div class="card">
+                    <img src="images/monkey_06.jpg" alt="">
+                    <div class="first_line_card">
+                        <span class="title_card">Image Test</span><span class="taille">M</span>
+                    </div>
+                    <span class="price">100€</span>
+                </div>
+                
+            </div>        
+            <button>Load more products</button>
+        </main>
+    </div>
+    <footer>
+        
+    </footer>
 </body>
 </html>
