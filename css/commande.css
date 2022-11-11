@@ -85,7 +85,7 @@ div.order h5 {
 aside input {
     width: 100%;
     padding: 5px;
-    font-family:  sans-serif;
+    font-family:  Poppins, sans-serif;
 }
 
 aside div.sub {
@@ -94,7 +94,7 @@ aside div.sub {
     margin-bottom: 1em;
     margin-top: 1em;
     font-size: 12px;
-    font-family: sans-serif;
+    font-family:  Poppins, sans-serif;
 }
 
 aside button {
